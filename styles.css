@@ -5,83 +5,41 @@
     box-sizing: border-box;
 }
 
+body, html {
+    height: 100%; /* Make sure body takes full height */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #F7F7F7;
-    color: #333;
-    line-height: 1.6;
+    background: url('ray.jpg') no-repeat center center fixed; /* Set 'ray.jpg' as the background */
+    background-size: cover; /* Cover the entire page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* White text color */
 }
 
-header {
-    background-color: #FF5733; /* Bold orange to reflect energy and warmth */
-    color: white;
+.content {
     text-align: center;
-    padding: 50px 20px;
+    backdrop-filter: blur(10px); /* Slight blur effect to improve text readability */
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px;
+    max-width: 90%; /* Ensure content doesn't overflow */
+    margin: 0 auto;
 }
 
-header h1 {
+h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 4em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-/* Section Styles */
-section {
-    padding: 40px 20px;
-    margin-bottom: 40px;
-}
-
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
-    color: #FF5733;
-    margin-bottom: 15px;
+    font-size: 3.5em;
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
-/* Vibes Section Styling */
-.vibes {
-    background-color: #F1C40F; /* Yellow to represent a lively, warm energy */
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.vibe-images {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.vibe-images img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Image Styling */
-.party-img {
-    width: 100%; /* Makes the image full-width */
-    height: auto; /* Keeps the aspect ratio intact */
-    border-radius: 10px; /* Rounded corners for a softer look */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished feel */
-    margin-bottom: 20px; /* Adds space below the image */
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2C3E50; /* Deep navy for contrast and depth */
-    color: white;
-    font-size: 1.1em;
+strong {
+    font-weight: bold; /* Make the date and address stand out */
 }
