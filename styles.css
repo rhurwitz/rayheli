@@ -14,30 +14,26 @@ body {
     background: url('ray.jpg') no-repeat center center fixed; /* Set 'ray.jpg' as the background */
     background-size: cover; /* Cover the entire page */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align content to the top */
     color: white; /* White text color */
+    padding: 20px; /* Add padding to the body */
 }
 
 .content {
-    text-align: center;
-    backdrop-filter: blur(10px); /* Slight blur effect to improve text readability */
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    border-radius: 10px;
-    max-width: 90%; /* Ensure content doesn't overflow */
-    margin: 0 auto;
+    max-width: 600px; /* Limit content width */
+    margin-top: 20px; /* Add space from the top */
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5em;
-    margin-bottom: 20px;
+    font-size: 2em; /* Smaller heading font */
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1em; /* Smaller paragraph text */
+    margin-bottom: 10px; /* Space between paragraphs */
 }
 
 strong {
