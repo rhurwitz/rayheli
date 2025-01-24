@@ -1,24 +1,163 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Style */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
 }
 
-header {
-  background-color: #ff5733;
-  color: white;
-  padding: 50px 0;
+/* Hero Section */
+.hero-section {
+    background: url('https://via.placeholder.com/1920x1080?text=Wedding+Banner') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
 }
 
-main {
-  padding: 20px;
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
+.couple-names {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.wedding-date {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-details {
+    background-color: #e6007e;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.btn-details:hover {
+    background-color: #c5006d;
+}
+
+/* Details Section */
+.details-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.details-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.event-info div {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.btn-rsvp {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background-color: #e6007e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.btn-rsvp:hover {
+    background-color: #c5006d;
+}
+
+/* RSVP Section */
+.rsvp-section {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.rsvp-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.rsvp-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-form label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.rsvp-form input,
+.rsvp-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rsvp-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e6007e;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.rsvp-form button:hover {
+    background-color: #c5006d;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 1rem;
 }
