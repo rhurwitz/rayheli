@@ -7,4 +7,10 @@ function rotateBackground() {
     images[currentIndex].classList.add('active');
 }
 
-setInterval(rotateBackground, 5000); // Change image every 5 seconds
+// Change image every 5 seconds
+const intervalId = setInterval(rotateBackground, 5000);
+
+// Optionally, clear the interval when the user navigates away
+window.addEventListener('beforeunload', () => {
+    clearInterval(intervalId);
+});
