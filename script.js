@@ -46,8 +46,8 @@ function adjustTextColor(image) {
     textElement.style.color = luminance < 128 ? 'white' : 'black';
 }
 
-// Change image every 5 seconds
-const intervalId = setInterval(rotateBackground, 5000);
+// Change image every 60 seconds
+const intervalId = setInterval(rotateBackground, 60000);
 
 // Optionally, clear the interval when the user navigates away
 window.addEventListener('beforeunload', () => {
