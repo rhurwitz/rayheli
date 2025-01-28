@@ -3,13 +3,12 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the left */
     align-items: center;
-    font-family: 'Bebas Neue', sans-serif; /* Updated font */
+    font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue font */
     color: white;
-    text-align: center;
     overflow: hidden;
-    background-color: black; /* Ensure the background is black */
+    background-color: black; /* Fallback for transparency */
 }
 
 /* Background container */
@@ -30,7 +29,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire area */
+    object-fit: cover;
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
 }
@@ -41,6 +40,26 @@ body {
 
 /* Content container */
 .content {
-    z-index: 1;
     position: relative;
+    z-index: 1;
+    width: 25%; /* Leftmost quarter of the screen */
+    height: 100vh; /* Full height */
+    padding: 20px; /* Add padding inside the content box */
+    text-align: left; /* Left-align the text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    overflow-y: auto; /* Allow scrolling for long text */
+}
+
+/* Text inside the content container */
+.content h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1rem; /* Adjust paragraph size */
+    line-height: 1.5; /* Increase line spacing for readability */
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
