@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace; /* Typewriter style */
+    font-family: 'Bebas Neue', sans-serif; /* Updated font */
     color: white;
     text-align: center;
     overflow: hidden;
