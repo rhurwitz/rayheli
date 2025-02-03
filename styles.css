@@ -3,13 +3,15 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: center;
-    font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue font */
+    align-items: flex-start; /* Align content to the top */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
     color: white;
     overflow: hidden;
     background-color: black; /* Fallback for transparency */
 }
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Background container */
 .background-container {
@@ -40,26 +42,46 @@ body {
 
 /* Content container */
 .content {
-    position: relative;
-    z-index: 1;
-    width: 25%; /* Leftmost quarter of the screen */
-    height: 100vh; /* Full height */
-    padding: 20px; /* Add padding inside the content box */
-    text-align: left; /* Left-align the text */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    box-sizing: border-box; /* Include padding in width/height calculations */
-    overflow-y: auto; /* Allow scrolling for long text */
+    position: absolute;
+    top: 5%; /* Position text near the top */
+    left: 5%; /* Position text near the left */
+    width: 40%; /* Adjust width for readability */
+    max-width: 500px;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
 }
 
-/* Text inside the content container */
+/* Text styling */
 .content h1 {
-    font-size: 2.5rem; /* Adjust heading size */
+    font-size: 2.5rem; /* Adjusted for better fit with Roboto */
+    font-weight: 700; /* Bold heading */
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Improve readability */
 }
 
 .content p {
-    font-size: 1rem; /* Adjust paragraph size */
-    line-height: 1.5; /* Increase line spacing for readability */
+    font-size: 1.2rem; /* Adjusted for readability */
+    font-weight: 400;
+    line-height: 1.5;
     margin-bottom: 1rem;
-    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Improve readability */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        left: 5%;
+        top: 3%;
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
 }
