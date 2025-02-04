@@ -1,21 +1,23 @@
-const images = document.querySelectorAll('.background-container img');
-let currentIndex = 0;
-
-function rotateBackground() {
-    images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].classList.add('active');
-}
-
-// Change image every 20 seconds
-const intervalId = setInterval(rotateBackground, 20000);
-
-// Keep text color always black
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".content").style.color = "black";
-});
+    // Get elements
+    const desktopBg = document.querySelector(".desktop-background");
+    const mobileBg = document.querySelector(".mobile-background");
+    const content = document.querySelector(".content");
 
-// Optionally, clear the interval when the user navigates away
-window.addEventListener('beforeunload', () => {
-    clearInterval(intervalId);
+    // Detect screen size and adjust images
+    function adjustBackground() {
+        if (window.innerWidth <= 768) {
+            desktopBg.style.display = "none";
+            mobileBg.style.display = "block";
+            content.style.top = "10%"; // Adjust text position on mobile
+        } else {
+            desktopBg.style.display = "block";
+            mobileBg.style.display = "none";
+            content.style.top = "5%"; // Keep default position for desktop
+        }
+    }
+
+    // Run on load and window resize
+    adjustBackground();
+    window.addEventListener("resize", adjustBackground);
 });
