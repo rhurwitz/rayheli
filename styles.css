@@ -6,7 +6,7 @@ body {
     display: flex;
     align-items: flex-start; /* Align content to the top */
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: black; /* Default text color for desktop */
     background-color: black; /* Fallback for transparency */
     overflow-x: hidden;
     overflow-y: auto;
@@ -51,6 +51,7 @@ body {
     padding: 10px;
     text-align: left;
     box-sizing: border-box;
+    color: black; /* Ensure black text on desktop */
 }
 
 /* Mobile adjustments */
@@ -71,7 +72,7 @@ body {
         width: 80%;
         max-width: 400px;
         text-align: center;
-        color: white; /* Ensure text is visible */
+        color: white; /* White text for better contrast on mobile */
         background: rgba(0, 0, 0, 0.5); /* Add slight background for readability */
         padding: 15px;
         border-radius: 10px;
