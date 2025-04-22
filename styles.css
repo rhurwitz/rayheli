@@ -80,3 +80,17 @@ body {
         border-radius: 10px;
     }
 }
+
+/* Link styling */
+a {
+    color: #ff69b4; /* Hot pink for that party vibe */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Mobile-specific link styling */
+@media screen and (max-width: 768px) {
+    a {
+        color: #ffd1ec; /* Softer pink for white-on-dark readability */
+    }
+}
